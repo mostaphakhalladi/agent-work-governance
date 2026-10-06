@@ -1,18 +1,11 @@
-# Agent Work Governance
+# Deprecated — merged into Project Brain
 
-This repository is the external, versioned source of truth for cross-project agent work rules.
+This repository is no longer a source of truth and contains no active governance policy.
 
-The canonical policy is `AGENTS.md`. On the primary development machine it is linked into `~/.codex/AGENTS.md` so Codex-compatible sessions inherit the policy across repositories.
+The cross-project agent work rules, including the mandatory **8–12 minute visible work cadence**, now live only in the private canonical repository:
 
-The policy deliberately separates:
-- agent behavior and visible 8-12 minute work cadence;
-- technical decision discipline;
-- runner/parallelization rules;
-- exact-head merge discipline;
-- reusable QA practices;
-- side-effect/deployment boundaries;
-- cross-chat continuity.
+**mostaphakhalladi/project-brain**
 
-## Important limitation
+Project Brain injects its root `AGENTS.md` into every `go` / `loop` context packet as `global_work_rules`.
 
-Repository rules and GitHub CI cannot force the ChatGPT application itself to render a mid-turn message. The policy therefore requires long work to be split into bounded cycles that return control to the user before the 12-minute maximum.
+Do not add rules, workflows, or automation here. This repository is retained only as a tombstone for the accidental short-lived duplicate and may be deleted safely.
